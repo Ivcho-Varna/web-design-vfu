@@ -1,0 +1,13 @@
+.map {
+  margin: 0 -15px;
+
+  iframe {
+    width: 100%;
+  }
+}
+
+@include desktop {
+  .map {
+    margin: 0 -120px;
+  }
+}

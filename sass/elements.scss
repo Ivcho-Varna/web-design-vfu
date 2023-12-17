@@ -1,0 +1,13 @@
+html, body {
+  font-family: $font-family-primary;
+  font-weight: 400;
+  font-style: normal;
+  color: $brand-secondary;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-family-secondary;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
