@@ -1,0 +1,30 @@
+.footer {
+  padding: 25px 15px 10px 15px;
+  background-color: #023047;
+
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .logo {
+    width: 140px;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+
+  .copyright {
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@include desktop {
+  .footer {
+    .logo {
+      width: 200px;
+    }
+  }
+}

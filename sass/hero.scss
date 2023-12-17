@@ -1,0 +1,54 @@
+.hero {
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("/img/hero-bg.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $brand-secondary;
+  }
+
+  &__title {
+    position: absolute;
+    top: calc(40% - 80px);
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: $text-white;
+  }
+
+  &__btn-cta {
+    position: absolute;
+    bottom: 20px;
+    background: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    left: calc(50% - 14px);
+    opacity: 0.4;
+    will-change: opacity;
+    transition: opacity 250ms ease-in;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}
+
+@include tablet {
+  .hero {
+    &__title {
+      font-size: 64px;
+    }
+  }
+}
