@@ -2,7 +2,6 @@ import TypeIt from "typeit";
 
 const typewriter = new TypeIt("#hero-title", {
     speed: 65,
-    afterComplete,
 });
 
 const words = [
